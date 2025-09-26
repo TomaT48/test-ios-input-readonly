@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vanilla JavaScript App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+  <body>
+    <main>
+      <h1>Vanilla JavaScript App</h1>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+      <div class="date-inputs">
+        <h2>Date Inputs (Readonly)</h2>
 
+        <div class="input-group">
+          <label for="date1">Date Input Normal</label>
+          <input type="date" id="date1" name="date1" value="2025-09-26" />
+        </div>
+        <br />
+        <br />
+        <div class="input-group">
+          <label for="date2"
+            >Date Input Standart Readonly (Dont work on ios):</label
+          >
+          <input
+            type="date"
+            id="date2"
+            name="date2"
+            value="2025-12-25"
+            readonly
+          />
+        </div>
+        <br />
+        <br />
+
+        <div class="input-group">
+          <label for="date3"
+            >Date Input Readonly (Readonly on ios as well):</label
+          >
+          <input
+            type="date"
+            id="date3"
+            name="date3"
+            value="2026-01-01"
+            readonly
+            onclick="this.blur()"
+          />
+        </div>
+        <br />
+        <br />
+
+        <div class="input-group">
+          <label for="date4"
+            >Date Input Readonly (Readonly on ios as well):</label
+          >
+          <input
+            type="date"
+            id="date4"
+            name="date4"
+            value="2026-01-01"
+            readonly
+            style="pointer-events: none; touch-action: none"
+          />
+        </div>
+        <br />
+        <br />
+
+        <div class="input-group">
+          <label for="date5"
+            >Date Input Readonly (Readonly on ios as well):</label
+          >
+          <input
+            type="date"
+            id="date5"
+            name="date5"
+            value="2026-01-01"
+            readonly
+            onclick="this.blur()"
+            onfocus="this.blur()"
+            style="pointer-events: none; touch-action: none"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
